@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Final Project
+ </title>
+ <link href="HTMLFiles/Final Project.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="font-size: Floor[75. Inherited]%;">
+
+<p class="Title">
+ <span style='text-decoration: underline;'>Teeing Up Inequality: Tiger Woods and the Unintended Impact on Gender Prize Money</span>
+</p>
+
+
+
+<p class="Subtitle">
+ By: Robbie Stirling and Joel Esparza
+</p>
+
+
+
+<p class='Text' style='text-align: center;'>
+ <br /><span style='font-weight: bold;'>*Read at 75% Zoom in Wolfram Mathematica notebook for best view*</span><br /><br />
+</p>
+
+
+
+<p class="Text">
+ This project is broken up into four parts: Context, Time Analysis, Regression Analysis, and Textual Analysis. We will first introduce Tiger Woods and all the greatness that he experienced throughout his professional golfing career. His dominance in the sport led to great strides in the sport and business of professional golf. We will then analyze changes in different metrics throughout time. We will compare changes in PGA and LPGA when it comes to their annual income numbers. We will analyze and describe what is happening in these graphs as they will be the pieces of evidence that led us to perform a causal analysis. In our difference in differences analysis, we claim that the arrival of Tiger Woods to the PGA led to the wage gap between genders in professional golf to widened tremendously. Lastly, we will perform textual analysis on websites give better context on the aftermath by looking at present day disparities in professional golf.
+</p>
+
+
+
+<p class='Chapter' style='text-align: center;border-left: 0px;border-right: 0px;border-top: 3px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ Background Knowledge
+</p>
+
+
+
+<p class='Subsection' style='border-left: 0px;border-right: 0px;border-top: 1px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ <span style='font-size: 24px;'>Tiger Woods Timeline</span>
+</p>
+
+
+
+<p class="Text">
+ There are very few athletes throughout human history that truly revolutionize their respective sports. Tiger Woods stands as a paradigm of this rare breed, a golfing prodigy who not only dominated the fairways but transformed the entire landscape of golf. Born Eldrick Tont Woods in 1975, Tiger&rsquo;s journey into the world of golf began at an astonishingly young age. Introduced to the sport by his father, Earl Woods, himself an avid golfer and former Green Beret, Tiger exhibited an extraordinary talent that defied his years. Nicknamed &lsquo;Tiger&rsquo; after a Vietnamese soldier Earl had befriended during the war, the young prodigy swiftly lived up to the moniker, showcasing an innate ability to master the intricacies of golf. His precocious talent became evident as he competed and won junior tournaments, and by the age of 2, he was already displaying an uncanny ability to mimic his father&rsquo;s swing. As Tiger grew, so did the expectations surrounding him. He seamlessly transitioned from dominating the amateur circuit to rewriting records on the professional stage. His meteoric rise not only fulfilled the early promise but exceeded expectations, marking the emergence of a golfing phenomenon.<br /><br />Winning tournament after tournament throughout the early stages of his career, his pure dominance during this reign can place him at the top of the list of one of the most dominant athletes to ever live. This puts him in the same tier of athletes such as Babe Ruth, Michael Jordan, Wayne Gretzky, and Mohammed Ali just to name a few. The timeline below helps us take a dive into Tiger&rsquo;s illustrious golf career up to date. We see that from 1996-2003, this was peak Tiger Woods. This is where there was a clear golfer that was heads and shoulders above the rest. This is where he experienced majority of his winning. He has dealt with many problems that resulted in his decline, mostly due to injuries in his back and issues in his personal life. After little over a decade, Tiger Woods was able to win his last major championship in 2019 which puts him closer to the all time record.
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_1.gif" alt="Graphics:PlotLabel /. Options[{GraphicsBox[TagBox[RasterBox[NumericArray[&lt;593,1182,3&gt;, UnsignedInteger8], {{0, 296.5}, {591., 0}}, {0, 255}, ColorFunction -&gt; RGBColor, ImageResolution -&gt; {144., 144.}, SmoothingQuality -&gt; System`Convert`CommonDump`ConvertText[High, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; PNG, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]], BoxForm`ImageTag[System`Convert`CommonDump`ConvertText[Byte, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; PNG, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], ColorSpace -&gt; System`Convert`CommonDump`ConvertText[RGB, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; PNG, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], Interleaving -&gt; True], Selectable -&gt; False], DefaultBaseStyle -&gt; System`Convert`CommonDump`ConvertText[ImageGraphics, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; PNG, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], ImageSize -&gt; {994.667, Automatic}, ImageSizeRaw -&gt; {591., 296.5}, PlotRange -&gt; {{0, 591.}, {0, 296.5}}], }] " width="746" height="401" style="vertical-align:middle" />
+</p>
+
+<p class='Chapter' style='text-align: center;border-left: 0px;border-right: 0px;border-top: 3px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ Creation of the Wage Gap in Professional Golf (Time Analysis)
+</p>
+
+
+
+<p class="Section">
+ PGA Average Viewership of Major 4 Tournaments by Year
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_2.gif" alt="Final Project_2.gif" width="561" height="295" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ &nbsp;&nbsp;&nbsp;&nbsp;In this graph we can see how PGA&rsquo;s average annual viewership of their top 4 tournaments changes throughout time. Before Tiger Woods enters the league, the average amount of viewers was ~20 million. Once he emerges into the league, we can see the average annual viewership increases at relatively high rates until it reaches ~30 million in 2002. It then stays relatively high for the next several years. In 2012, we can see viewership begin to decrease and continue to decrease until it reaches pre-Tiger Woods viewership numbers in 2021.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;Why is this important? The rise of Tiger Woods and his reign of pure dominance in the sport in his early years was able to attract large amounts of viewers to the point where he was able to increase the average viewership for each tournament by ~10 million. In the sports industry, viewership is what drives advances for both the sport and the business. This is no different for the sport and business of golf. This increase in viewership resulted in generating higher levels of revenue through more sponsorships, broadcasting rights, merchandise sales, and ticket sales. As a result of more money flowing into men&rsquo;s golf, it is only appropriate if the people that are responsible for that viewership get a piece of it.
+</p>
+
+
+
+<p class="Section">
+ Annual Salaries Throughout Time
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_3.gif" alt="Final Project_3.gif" width="489" height="310" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Final Project_4.png" alt="Final Project_4.png" width="4" height="12" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ &nbsp;&nbsp;&nbsp;&nbsp;We will now take a look at how the average annual winnings for PGA (men&rsquo;s) players compares with that of LPGA (women&rsquo;s) players. We can see that from 1987 to 1996, they move as close to parallel as it can get. However, once Tiger Woods enters the league, we can see the pink line for women&rsquo;s increase at a relatively constant rate while the blue line for men&rsquo;s increase exponentially. This parabolic shape that the average men&rsquo;s winnings follows from 1996 -2002 indicates very high marginal increases. These rates were higher than other time period with the exception of post-Covid19. <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;This 6 year span from 1996-2002 was where the gap between average winnings for men&rsquo;s became significantly larger than women&rsquo;s. This dramatic increase throughout this time period resulted in a wage gap for genders in professional golf. Tiger Woods rise to stardom and the way he was able to captivate fans resulted in more money being generated to men&rsquo;s golf, which then resulted in men earning higher money through winnings which further created this enormous wage gap that was not present in prior years.
+</p>
+
+
+
+<p class="Section">
+ Annual Winning&rsquo;s % Changes
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_5.gif" alt="Final Project_5.gif" width="556" height="293" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ &nbsp;&nbsp;&nbsp;&nbsp;This line graph shows us the percent changes of average annual winnings for both PGA and LPGA. For the most part, we can see that they tend to fluctuate simultaneous with each other. However, if we once again were to look between the time span of 1996-2002, it will tell a different story than the rest of the graph. These percentage increases throughout this time period can explain the parabolic shape that we saw in the previous graph. During this time span, we can see PGA reached levels of increases in their salaries by +5%, ~ +22%, +22%, +45%, +56%, +8%, and +19%. This year time span has 5 of the top 8 highest percent changes, including the two highest which are both more than double the third highest percent change in this graph (all with the exception of Covid).
+</p>
+
+
+
+<p class="Section">
+ Cumulative Percent Changes of Average Annual Winnings
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_6.gif" alt="Final Project_6.gif" width="539" height="306" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ &nbsp;&nbsp;&nbsp;&nbsp;This graph shows us the cumulative percent changes of average annual winnings for both PGA and LPGA. We can see before the arrival of Tiger Woods, LPGA was yielding higher percent changes in average annual winnings compared to their male counterparts, PGA. However, once Tiger Woods enters the league, we once again see this parabolic shape between 1996-2002 . This resulted in a difference of 400% between genders in the year 2003. Until COVID-19 strikes, we can see that this 400% gap was relatively constant over the years. If it were not for these high percentage increases from 1996-2002, the wage gap between PGA and LPGA may still be similar to how it looked prior to the arrival of Woods ( refer to &ldquo;Annual Salaries Throughout Time&rdquo; from 1987-1996).
+</p>
+
+
+
+<p class='Chapter' style='text-align: center;border-left: 0px;border-right: 0px;border-top: 3px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ Difference in Differences
+</p>
+
+
+
+<p class="Text">
+ After analyzing charts/graphs and conducting research into this topic, we wanted to apply our statistical analysis skills and explore more. Due to the fact that this entire project is claiming that Tiger Woods tremendously enlarged the wage gap between genders in professional golf, we felt that it would only be appropriate if we performed a causal analysis technique to truly understand his impact. The method we chose was a difference in difference curve where we created an interaction term to indicate the impact that the arrival of Tiger Woods has on PGA average winnings compared to average winnings to LPGA. <br /><br />We used the same dataset that was used for the line graphs in beginning of this project. We altered and manipulated our dataset a bit. We filtered for observations that were from 1988-2003. This way, we have the data for player winnings for both the 8 years before Woods arrived and the first 8 years of Wood&rsquo;s career. In the dataset, rank, player, winnings, and year are pretty self explanatory. League is a binary variable that is 1 if the player is in the PGA and is 0 if the player is in the LPGA. Tiger is also a binary variable that is 1 if it is 1996 or after (Tiger&rsquo;s arrival) and 0 if it is before. League_Tiger is an interaction term that is equal to League*Tiger. We will talk more about what these coefficients mean at the end our regression analysis.
+</p>
+
+
+
+<p class='Output' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_7.png" alt="Final Project_7.png" width="672" height="454" style="vertical-align:middle;" usemap="#map_7" />
+<map name="map_7">
+<area shape="rect" coords="644,450,658,436" title="Data not in notebook. Click to store now.0 MB), it will not be available when you quit the kernel.
+Unless you store the data (" nohref="" />
+</map>
+</p>
+
+<table class='Output' style='text-align: center;' frame='box' rules='all'>
+ <tr style='vertical-align: top;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>1 column 1</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>65</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>129</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>136.605</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>193</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>372</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>2 column 2</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Allison Finney</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Andrew Magee</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Beth Daniel</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Betsy King</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Billy Andrade</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Billy Mayfair</span></td>
+  <td style='text-align: left;'><span>16</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>(Other)</span></td>
+  <td style='text-align: left;'><span>8120</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>3 column 3</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>153</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>13612.5</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>70458.5</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>224804.</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>235230.</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>9188321</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>4 column 4</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>1988</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>1992</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>1995</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>1995.37</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>1999</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>2003</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+ <tr style='vertical-align: top;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>5 column 5</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>0.610029</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>6 column 6</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>0.493549</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><span style='font-family: Times;color: #0000FF;'>7 column 7</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>1st Qu</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Median</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Min</span></td>
+  <td style='text-align: left;'><span>0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Mean</span></td>
+  <td style='text-align: left;'><span>0.294547</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>3rd Qu</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Max</span></td>
+  <td style='text-align: left;'><span>1</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><span></span></td>
+ </tr>
+ <tr style='vertical-align: top;'>
+  <td style='text-align: left;'><span></span></td>
+  <td style='text-align: left;'><span></span></td>
+  <td style='text-align: left;'><span></span></td>
+  <td style='text-align: left;'><span></span></td>
+ </tr>
+</table>
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_8.gif" alt="Final Project_8.gif" width="442" height="293" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='text-align: center;'>
+ <span style='font-size: 24px;font-weight: bold;color: #800080;'><br /><br />Winnings</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> </span><span style='font-size: 24px;font-weight: bold;color: #000000;'>=</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> 74,766.474</span><span style='font-size: 24px;font-weight: bold;color: #000000;'> </span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> </span><span style='font-size: 24px;font-weight: bold;color: #000000;'>+ </span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'>77,053.62</span><span style='font-size: 24px;font-weight: bold;color: #000000;'>* </span><span style='font-size: 24px;font-weight: bold;color: #FF0000;'>League</span><span style='font-size: 24px;font-weight: bold;color: #000000;'> +</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> 69,930.84 </span><span style='font-size: 24px;font-weight: bold;color: #000000;'>*</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> </span><span style='font-size: 24px;font-weight: bold;color: #FF0000;'>Tiger</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> </span><span style='font-size: 24px;font-weight: bold;color: #000000;'>+</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> 232,620.69 </span><span style='font-size: 24px;font-weight: bold;color: #000000;'>* </span><span style='font-size: 24px;font-weight: bold;color: #FF0000;'>League_Tiger</span><span style='font-size: 24px;font-weight: bold;color: #0000FF;'> <br /><br /></span>
+</p>
+
+
+
+<table class='Output' frame='box' rules='all'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Coefficient</span></td>
+  <td style='text-align: center;'><span>Meaning</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/Final Project_9.png" alt="Final Project_9.png" width="99" height="17" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span>This is the estimated average annual winnings for players in the LPGA (League = 0) when Tiger is before his arrival (Tiger = 0)</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/Final Project_10.png" alt="Final Project_10.png" width="169" height="17" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span>If a player is in the PGA (League = 1) instead of the LPGA (League = 0), their average annual winnings are estimated to increase by $77,053.62, assuming Tiger is before his arrival</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/Final Project_11.png" alt="Final Project_11.png" width="169" height="18" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span>If the year is after the arrival of Tiger Woods (Tiger = 1), the average annual winnings are estimated to increase by $69,930.84 for players in the LPGA (League = 0)</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/Final Project_12.png" alt="Final Project_12.png" width="249" height="19" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span>The interaction term represents the additional impact on winnings when both in the PGA (League = 1) and after the arrival of Tiger Woods (Tiger = 1). Holding other variables constant, being in the PGA and after Tiger's arrival is associated with an additional increase of $232,620.69 in average annual winnings compared to the reference category (LPGA and before Tiger's arrival)</span></td>
+ </tr>
+</table>
+
+<p class='Output' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_13.gif" alt="Graphics:Comparison of Equations" width="432" height="252" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ &nbsp;&nbsp;&nbsp;&nbsp;The graph above can help us visualize the impact of Tiger Woods for the PGA. Before Tiger Woods (1988-1995), we see that there was a $77,053 gap between men average winnings and women&rsquo;s average winnings. After the arrival of Tiger Woods in the PGA, we see that women&rsquo;s witnessed a relatively small increase in average annual wages after the arrival of Tiger Woods by $69,930 For PGA however, they experienced an increase of $232,620.69 in average winnings. This shows the tremendous impact that Tiger Woods had on average golf winnings for the PGA and how it generated a wage gap that was unprecedented. Tiger Woods, a man who truly changed the game forever. These results give us statistically significant evidence supporting our claim that &ldquo;Tiger Woods tremendously enlarged the wage gap between professional men and women golf players.<br />
+</p>
+
+
+
+<p class='Chapter' style='text-align: center;border-left: 0px;border-right: 0px;border-top: 3px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ Present Day Disparities in Professional Golf (Textual Analysis)
+</p>
+
+
+
+<p class="Section">
+ PGA Website Homepage
+</p>
+
+
+
+<p class='Output' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_14.gif" alt="Final Project_14.gif" width="300" height="296" style="vertical-align:middle" />
+</p>
+
+<table class='Output' style='text-align: center;' frame='box' rules='all'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Number of male words</span></td>
+  <td style='text-align: center;'><span>101</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Number of female words</span></td>
+  <td style='text-align: center;'><span>7</span></td>
+ </tr>
+</table>
+
+<p class="Section">
+ LPGA Website Homepage
+</p>
+
+
+
+<p class='Output' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_15.gif" alt="Final Project_15.gif" width="300" height="297" style="vertical-align:middle" />
+</p>
+
+<table class='Output' style='text-align: center;' frame='box' rules='all'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Number of male words</span></td>
+  <td style='text-align: center;'><span>225</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Number of female words</span></td>
+  <td style='text-align: center;'><span>57</span></td>
+ </tr>
+</table>
+
+<p class="Section">
+ LPGA Diversity Pages
+</p>
+
+
+
+<p class='Output' style='text-align: center;'>
+ <img src="HTMLFiles/Final Project_16.gif" alt="Final Project_16.gif" width="432" height="270" style="vertical-align:middle;" usemap="#map_16" />
+<map name="map_16">
+<area shape="rect" coords="11,29,80,18" title="0.000267823" nohref="" />
+<area shape="rect" coords="11,41,81,30" title="0.000271709" nohref="" />
+<area shape="rect" coords="11,53,81,42" title="0.000272147" nohref="" />
+<area shape="rect" coords="11,65,84,54" title="0.000282093" nohref="" />
+<area shape="rect" coords="11,76,84,66" title="0.00028398" nohref="" />
+<area shape="rect" coords="11,88,92,77" title="0.000313403" nohref="" />
+<area shape="rect" coords="11,100,97,89" title="0.000334543" nohref="" />
+<area shape="rect" coords="11,112,97,101" title="0.000334967" nohref="" />
+<area shape="rect" coords="11,124,98,113" title="0.000336173" nohref="" />
+<area shape="rect" coords="11,136,105,125" title="0.000363676" nohref="" />
+<area shape="rect" coords="11,148,116,137" title="0.000408033" nohref="" />
+<area shape="rect" coords="11,160,120,149" title="0.000423381" nohref="" />
+<area shape="rect" coords="11,172,121,161" title="0.000428388" nohref="" />
+<area shape="rect" coords="11,184,137,173" title="0.000489571" nohref="" />
+<area shape="rect" coords="11,196,143,185" title="0.000512732" nohref="" />
+<area shape="rect" coords="11,207,152,197" title="0.000547936" nohref="" />
+<area shape="rect" coords="11,219,159,208" title="0.000573436" nohref="" />
+<area shape="rect" coords="11,231,161,220" title="0.000581091" nohref="" />
+<area shape="rect" coords="11,243,215,232" title="0.000794938" nohref="" />
+<area shape="rect" coords="11,255,423,244" title="0.00160609" nohref="" />
+</map>
+</p>
+
+<p class="Text">
+ 
+</p>
+
+
+
+<p class="Section">
+ Textual Analysis Comparison
+</p>
+
+
+
+<p class="Subsection">
+ Word Cloud
+</p>
+
+
+
+<p class="Text">
+ It is very interesting to see the different ways that each organization describes who they are and what they do. Analyzing the results from the PGA page there is quite a few mentions relating to money, the tournaments that they play throughout the year, and a lot of other words related to the business side of the operations. Comparing that to the LPGA page there aren&rsquo;t any mentions of words related to money or earnings like there was with the PGA. They have more mentions of stuff related to how they are impacting their players and other things related to helping others whether it is the mentions of &ldquo;assistance&rdquo;, &ldquo;opportunities&rdquo;, or &ldquo;Diversity&rdquo;. They are in more of position where that is something they have to focus on to grow the game for women around the world. This backed up by the fact when I went to do an analysis of their Diversity pages, the PGA had no such tab on their website whereas the LPGA has a entire tab dedicated to the sub matter on the front page of their website. We thought it would interesting to analysis these pages on the LPGA website to see their areas of focus on improving diversity by looking at the frequency of words across the pages in the diversity tab.
+</p>
+
+
+
+<p class="Subsection">
+ Diversity Pages (LPGA)
+</p>
+
+
+
+<p class="Text">
+ The word frequency analysis of diversity-related content across three different pages on the LPGA website reveals intriguing insights. After extracting and processing the text data from URLs focusing on diversity, the top 20 words were identified and visualized in a horizontal bar chart. Noteworthy terms include &ldquo;$,&rdquo; &ldquo;New,&rdquo; &ldquo;%,&rdquo; and &ldquo;people,&rdquo;. Not necessarily the most frequent words that you&rsquo;d expect to find knowing the context of the text being analyzed. Without knowing the exact context in which these words are used, or symbols in the case of &lsquo;%&rsquo; and &lsquo;$&rsquo;, it is difficult to fully understand the text being analyzed. There could be a lot of discussion between discrepancies in earnings among the sport, thus the &lsquo;$&rsquo;, or the ever changing demographics of the sport, thus the &lsquo;%&rsquo;. Those instances are why we thought it would be important to keep them included in the analysis. The LPGAs overall commitment to diversity on the girl&rsquo;s tour and the sport of golf in general cannot be denied with the amount of content on their page being dedicated to the subject and the efforts they have made for change.
+</p>
+
+
+
+<p class="Subsection">
+ Gender Specific Word Usage
+</p>
+
+
+
+<p class="Text">
+ The gender-specific word count analysis of the PGA and LPGA &ldquo;About Us&rdquo; pages reveals an interesting disparity in language usage. The PGA&rsquo;s page leans heavily towards male-specific words, with a count of 101, while only mentioning female specific words only 7 times. On the other hand, the LPGA&rsquo;s page also exhibits a higher count of male-specific words (225) however includes more female-specific mentions (57) compared to the PGA. This discrepancy could be attributed to a conscious effort by the LPGA to highlight inclusivity and emphasize the contributions of both genders within the sport. The LPGA, in its messaging, likely is drawing more parallels and comparisons with their male counterparts at the PGA, perhaps as a deliberate effort to highlight the disparities to highlight the shared excellence and achievements within the golfing world regardless of gender. Instead of being compared as separates, they see each other as equals not trying to create a divisible line between the two organizations. between the two tours or to highlight . It may reflect a strategic communication approach to challenge traditional gender norms and foster a more balanced representation within the golfing community. This could also indicate a response to the broader societal shift towards gender equality in sports, where the LPGA aims to celebrate and acknowledge the achievements of both male and female players.
+</p>
+
+
+
+<p class='Chapter' style='text-align: center;border-left: 0px;border-right: 0px;border-top: 2px;border-bottom: 0px;border-style: solid;border-color: #BFBFBF;'>
+ Sources
+</p>
+
+
+
+<p class="Section">
+ Data
+</p>
+
+
+
+<p class="Item">
+ Sources : 
+</p>
+
+
+
+<p class="Subitem">
+ PGA Tournament Earnings from the PGA Tour website
+</p>
+
+
+
+<p class="Subsubitem">
+ Download option per year
+</p>
+
+
+
+<p class="Subsubitem">
+ https://www.pgatour.com/stats/detail/109
+</p>
+
+
+
+<p class="Subitem">
+ LPGA Tournament Earnings from the LPGA Tour website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Subsubitem">
+ Web scrape the information from the website as there was no option to download
+</p>
+
+
+
+<p class="Subsubitem">
+ https://www.lpga.com/statistics/money/official-money?year=2023
+</p>
+
+
+
+<p class="Subitem">
+ PGA Viewership Numbers
+</p>
+
+
+
+<p class="Subsubitem">
+ https://www.sportsmediawatch.com/major-golf-ratings-historical-masters-us-open-british-pga-championship-tiger-woods/
+</p>
+
+
+
+<p class="Item">
+ &nbsp;&nbsp;&nbsp;&nbsp;Data Preparation
+</p>
+
+
+
+<p class="Subitem">
+ Remove unwanted columns
+</p>
+
+
+
+<p class="Subitem">
+ Remove NAs
+</p>
+
+
+
+<p class="Subitem">
+ Using R
+</p>
+
+
+
+<p class="Subsubitem">
+ Assign a year for data and add tour column to indicate PGA or LPGA
+</p>
+
+
+
+<p class="Subsubitem">
+ Combine all the data for each tour
+</p>
+
+
+
+<p class="Subsubitem">
+ Combine data into one concise table
+</p>
+
+
+
+<p class="Subsection">
+ 
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
